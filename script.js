@@ -69,7 +69,7 @@ function removeFilmFromList(id) {
     submitText: "Sim",
     cancelText: "Não",
     position: "top",
-    subimitCallBack: function remove() {
+    submitCallback: function remove() {
       movieList = movieList.filter((movie) => movie.imdbID !== id);
       document.getElementById(`movie-card-${id}`).remove();
       updateLocalStorage();
