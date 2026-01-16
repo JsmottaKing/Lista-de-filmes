@@ -1,0 +1,91 @@
+/* :root {
+  --primary-color: #264653;
+  --light-primary: #2a9d8f;
+  --lightest-color: #e76f51;
+  --secondary-color: #f4a261;
+  --light-secondary: #780000;
+} */
+
+:root {
+  --primary-color: #1d3557; /* Azul Marinho Profundo (ideal para Header/Footer) */
+  --light-primary: #457b9d; /* Azul Aço (ideal para o fundo da página/overlay) */
+  --lightest-color: #f1faee; /* Branco Gelo (ideal para o fundo do Modal ou Cards) */
+  --secondary-color: #a8dadc; /* Azul Tiffany (ideal para detalhes e bordas) */
+  --light-secondary: #e63946; /* Vermelho Vivo (perfeito para o botão 'Remover' ou alertas) */
+}
+
+#modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  visibility: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-background {
+  background-color: var(--light-primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+#modal-container {
+  z-index: 1;
+  background-color: var(--lightest-color);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+
+#movie-title {
+  padding: 1rem 0;
+}
+
+#modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#movie-poster {
+  border-radius: 10px;
+}
+
+#movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 300px;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+#add-to-list {
+  border: 3px solid var(--primary-color);
+  padding: 0.3rem 0;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 1px 1px 10px #000;
+}
+
+#add-to-list:focus,
+#add-to-list:hover {
+  background-color: var(--primary-color);
+  color: var(--lightest-color);
+}

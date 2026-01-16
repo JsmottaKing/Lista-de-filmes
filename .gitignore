@@ -1,0 +1,29 @@
+# --- Dependências ---
+# Se você usar ferramentas como o NPM futuramente, ignore esta pasta gigante
+node_modules/
+
+# --- Segurança e Chaves ---
+# Caso você decida esconder sua chave de API em um arquivo .env
+.env
+*.env
+# Se você quiser ignorar sua chave específica, descomente a linha abaixo
+key.js
+
+# --- Arquivos de Sistema ---
+# Arquivos inúteis que o Windows e Mac criam sozinhos
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDEs e Editores ---
+# Configurações específicas do VS Code ou IntelliJ que não precisam ir pro GitHub
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs ---
+# Registros de erros que o sistema gera
+*.log
+npm-debug.log*
+
