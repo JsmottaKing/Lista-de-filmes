@@ -1,11 +1,3 @@
-/* :root {
-  --primary-color: #264653;
-  --light-primary: #2a9d8f;
-  --lightest-color: #e76f51;
-  --secondary-color: #f4a261;
-  --light-secondary: #780000;
-} */
-
 :root {
   --primary-color: #1d3557; /* Azul Marinho Profundo (ideal para Header/Footer) */
   --light-primary: #457b9d; /* Azul Aço (ideal para o fundo da página/overlay) */
@@ -88,4 +80,32 @@
 #add-to-list:hover {
   background-color: var(--primary-color);
   color: var(--lightest-color);
+}
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 768px) {
+  #modal-container {
+    width: 40%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+  }
+  #modal-body {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex;
+  }
+  #movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 500px;
+    text-align: center;
+    padding-left: 0.5rem;
+  }
+  #movie-plot,
+  #movie-cast,
+  #movie-genre {
+    padding: 0.5rem;
+  }
 }
