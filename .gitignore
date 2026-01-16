@@ -7,7 +7,7 @@ node_modules/
 .env
 *.env
 # Se você quiser ignorar sua chave específica, descomente a linha abaixo
-key.js
+# key.js
 
 # --- Arquivos de Sistema ---
 # Arquivos inúteis que o Windows e Mac criam sozinhos
